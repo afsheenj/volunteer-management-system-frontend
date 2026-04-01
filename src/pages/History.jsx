@@ -20,7 +20,7 @@ import AppNavbar from "../components/AppNavbar";
 import { AuthContext } from "../context/AuthContext";
 import api from "../services/api";
 import { MessageSquareText } from "lucide-react";
-import { showError,showWarning } from "../utils/alertservice";
+import { showError,showWarning } from "../utils/alertService";
 
 const ROLE_TABS = {
   USER: ["all", "OPEN", "IN_PROGRESS", "FULL", "COMPLETED", "CANCELLED"],

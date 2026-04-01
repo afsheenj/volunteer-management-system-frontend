@@ -6,7 +6,7 @@ import axios from "axios";
 import { addOrganizationMembers } from "../services/organizationService";
 import OrganizationFloatingMenu from "../components/OrganizationFloatingMenu"
 import Swal from "sweetalert2";
-import { showError,showWarning,showSuccess } from "../utils/alertservice";
+import { showError,showWarning,showSuccess } from "../utils/alertService";
 
 const OrganizationMember = () => {
 

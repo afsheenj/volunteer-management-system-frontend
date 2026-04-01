@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
 import { Eye, EyeOff } from "lucide-react";
-import { showError,showSuccess,showWarning } from "../utils/alertservice";
+import { showError,showSuccess,showWarning } from "../utils/alertService";
 
 const ForgotPassword = () => {
 

@@ -12,7 +12,7 @@ import Spinner from "../components/LoadingSpinner";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import api from "../services/api"
-import { showConfirm, showError, showNumberInput, showSuccess, showWarning } from "../utils/alertservice";
+import { showConfirm, showError, showNumberInput, showSuccess, showWarning } from "../utils/alertService";
 import { aiSearchRequests } from "../services/requestService";
 import { useLocation} from "react-router-dom";
 

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Globe, Zap } from "lucide-react"; 
 import styles from "./Contact.module.css";
 import api from "../services/api";
-import { showError, showSuccess } from "../utils/alertservice";
+import { showError, showSuccess } from "../utils/alertService";
 
 const Contact = () => {
   const [isEmergency, setIsEmergency] = useState(false);

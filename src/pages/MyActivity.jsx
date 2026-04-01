@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AppNavbar from "../components/AppNavbar";
 import { AuthContext } from "../context/AuthContext";
 import api from "../services/api";
-import { showError,showSuccess,showWarning } from "../utils/alertservice";
+import { showError,showSuccess,showWarning } from "../utils/alertService";
 
 
 const MyActivity = () => {

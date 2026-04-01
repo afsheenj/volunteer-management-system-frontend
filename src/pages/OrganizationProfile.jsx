@@ -13,7 +13,7 @@ import {
   updateOrganizationProfile
 } from "../services/organizationService";
 import LoadingSpinner from "../components/LoadingSpinner";
-import { showLogoutConfirm,showSuccess,showError } from "../utils/alertservice";
+import { showLogoutConfirm,showSuccess,showError } from "../utils/alertService";
 
 const OrganizationProfile = () => {
 

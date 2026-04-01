@@ -5,7 +5,7 @@ import { AuthContext } from "../context/AuthContext";
 import { createUserRequest } from "../services/serviceRequestService";
 import api from "../services/api";
 import { useNavigate, useParams } from "react-router-dom";
-import { showSuccess,showError,showWarning } from "../utils/alertservice";
+import { showSuccess,showError,showWarning } from "../utils/alertService";
 
 const UserEditRequest = () => {
 

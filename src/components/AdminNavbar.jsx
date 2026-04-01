@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo1-r1.png";
 import { Menu } from "lucide-react";
-import { showLogoutConfirm } from "../utils/alertservice";
+import { showLogoutConfirm } from "../utils/alertService";
 
 const AdminNavbar = ({ toggleSidebar }) => {
 

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import axios from "axios";
 import { APP_CONFIG } from "../config/config";
-import { showSuccess } from "../utils/alertservice";
+import { showSuccess } from "../utils/alertService";
 
 const API_BASE = APP_CONFIG.BASE_URL;
 

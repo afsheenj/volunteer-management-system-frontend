@@ -5,7 +5,7 @@ import { APP_CONFIG } from "../config/config";
 import api from "../services/api";
 import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
-import { showError } from "../utils/alertservice";
+import { showError } from "../utils/alertService";
 
 const API_BASE = APP_CONFIG.BASE_URL;
 

@@ -10,7 +10,7 @@ import {
 import AppNavbar from '../components/AppNavbar';
 import { useState, useEffect } from 'react';
 import api from '../services/api';
-import { showError } from '../utils/alertservice';
+import { showError } from '../utils/alertService';
 
 const CATEGORY_MAP = {
   OLD_AGE_HOME: {

@@ -5,7 +5,7 @@ import AdminSidebar from "../components/AdminSidebar";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { Eye, EyeOff } from "lucide-react";
 import Swal from "sweetalert2";
-import { showConfirm,showSuccess, showError } from "../utils/alertservice";
+import { showConfirm,showSuccess, showError } from "../utils/alertService";
 import { AuthContext } from "../context/AuthContext";
 
 const AdminProfile = () => {
