@@ -1,0 +1,220 @@
+.contactSection {
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+
+.blob1, .blob2 {
+  position: absolute;
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.1;
+  border-radius: 50%;
+}
+.blob1 { width: 400px; height: 400px; background: #020617; top: 0; right: 0; }
+.blob2 { width: 350px; height: 350px; background: #10b981; bottom: 0; left: 0; }
+
+.mainWrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 2rem;
+  z-index: 10;
+  margin-top: 40px; 
+}
+
+
+.glassContainer {
+    width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e1; 
+  overflow: hidden;
+}
+
+.contentPadding {
+  padding: 60px 45px; 
+}
+
+
+.standardBg {
+  background: linear-gradient(165deg, #1e40af, #3b83f6cb, #d724e7c8);;
+}
+.emergencyBg {
+  background: linear-gradient(165deg, #450a0a 0%, #dc2626 55%, #7f1d1d 100%) !important;
+}
+
+.infoColumn { color: white; transition: background 0.5s ease; }
+.mainTitle { font-size: 2.6rem; font-weight: 800; line-height: 1.1; margin: 20px 0; }
+.gradientText { color: #6ee7b7; }
+.description { opacity: 0.9; margin-bottom: 30px; line-height: 1.6; }
+
+
+.cyberBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-left: 3px solid #6ee7b7;
+  background: linear-gradient(90deg, rgba(110, 231, 183, 0.1) 0%, transparent 100%);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.plainLucideIcon {
+  color: #6ee7b7;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.itemText h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.itemText p {
+  font-size: 0.95rem;
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.formColumn { background: white; }
+.interactiveForm { display: flex; flex-direction: column; gap: 28px; }
+.inputRow { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.floatingGroup { position: relative; }
+
+.floatingGroup input, .floatingGroup select, .floatingGroup textarea {
+  width: 100%;
+  padding: 18px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f9fafb;
+  font-size: 1rem;
+  color: #0f172a;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.floatingGroup label {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  color: #64748b;
+  font-weight: 600;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+
+.floatingGroup input:focus ~ label,
+.floatingGroup input:not(:placeholder-shown) ~ label,
+.floatingGroup textarea:focus ~ label,
+.floatingGroup textarea:not(:placeholder-shown) ~ label,
+.selectInput:focus ~ .selectLabel,
+.selectInput:valid ~ .selectLabel {
+  top: -12px;
+  left: 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1e40af;
+  background: white;
+  padding: 0 8px;
+}
+
+
+/* BUTTONS */
+.glowButton {
+  padding: 18px; background: #0f172a; color: white; border: none;
+  border-radius: 12px; font-weight: 700; cursor: pointer; transition: 0.3s;
+}
+
+.glowButton:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.2);
+}
+
+.emergencyBtn {
+  padding: 18px; background: #dc2626; color: white; border: none; border-radius: 12px;
+  font-weight: 800; animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+@media (max-width: 950px) {
+  .glassContainer {
+    grid-template-columns: 1fr;
+  
+    gap: 2rem;
+  }
+
+  .leftPanel {
+    text-align: center;
+    align-items: center;
+  }
+
+  .rightPanel {
+    width: 100%;
+  }
+
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .glassContainer {
+    border-radius: 20px;
+  }
+  .contentPadding {
+    padding: 25px; 
+    align-items: center;
+    justify-content: center;
+  }
+  .mainTitle {
+    font-size: 2rem;
+  }
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .contactSubtitle {
+    font-size: 1rem;
+  }
+}
+
+
+

@@ -1,0 +1,24 @@
+[33mcommit 566b545eb369df8f3799d661b91530c2d7c84b2b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: e567169 31bfad1
+Author: Afsheen Jahan S <afsheenj2k@gmail.com>
+Date:   Fri Jan 9 16:01:34 2026 +0530
+
+    Merge branch 'main' of https://github.com/afsheenj/Volunteer-Management-System
+
+[33mcommit 31bfad1524abdcaeb2a23bf4f269450d27cb7eb4[m
+Author: Afsheen Jahan S <afsheenj2k@gmail.com>
+Date:   Fri Jan 9 15:59:47 2026 +0530
+
+    Delete README.md
+
+[33mcommit e567169c7c22c932034b3ca9166b6e22a00986fa[m
+Author: Afsheen Jahan S <afsheenj2k@gmail.com>
+Date:   Fri Jan 9 15:57:12 2026 +0530
+
+    Initial commit project setup
+
+[33mcommit 9972e1bd25b074ef7ffbc58f5892445fa6e359f4[m
+Author: Afsheen Jahan S <afsheenj2k@gmail.com>
+Date:   Fri Jan 9 15:27:13 2026 +0530
+
+    Initial commit

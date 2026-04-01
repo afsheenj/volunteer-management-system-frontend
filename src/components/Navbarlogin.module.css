@@ -1,0 +1,152 @@
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 30px;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+ flex: 1;
+  gap: 2rem;
+  
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 9999;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 45px;
+  object-fit: contain;
+ 
+}
+
+.logoText {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-left: 10px;
+  font-family: 'Orbitron', sans-serif;
+  color: #1e40af;
+}
+
+
+.ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.a:hover {
+  color: #1e40af;
+}
+
+
+.BtnContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.Btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.5rem;
+  width: 120px;
+  border: none;
+  background-color: #1e40af;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Btn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 1.5rem 0;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+     opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: 
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .BtnContainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+}

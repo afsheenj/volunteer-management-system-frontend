@@ -1,0 +1,12 @@
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  color: #475569;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+.footer span {
+font-family: 'orbitron', sans-serif;
+  color: #1e40af;
+}
