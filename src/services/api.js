@@ -2,7 +2,7 @@ import axios from "axios";
 import { APP_CONFIG } from "../config/config";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: APP_CONFIG.BASE_URL,
   timeout: 15000
 });
 
